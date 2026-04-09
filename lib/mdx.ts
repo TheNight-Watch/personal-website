@@ -6,11 +6,19 @@ import type { Locale } from './i18n'
 const contentDirectory = path.join(process.cwd(), 'content')
 
 // Types for Home content
-export interface ExperienceItem {
+export interface ExperienceEntry {
+  title: string
   role: string
-  organization: string
   period: string
+  start: string
+  end: string | null
   description: string
+}
+
+export interface ExperienceSection {
+  id: 'education' | 'projects' | 'campus'
+  title: string
+  items: ExperienceEntry[]
 }
 
 export interface AwardItem {
@@ -35,7 +43,8 @@ export interface HomeFrontmatter {
   tagline: string
   subtitle: string
   description: string
-  experience: ExperienceItem[]
+  introduction: string[]
+  experienceSections: ExperienceSection[]
   awards: AwardItem[]
   eventsHosted: EventItem[]
   techStack: TechStackCategory[]

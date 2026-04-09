@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import { ExperienceSections } from "@/components/experience-sections"
 import { siteConfig } from "@/lib/data"
 import { useLanguage } from "@/components/language-provider"
 import type { HomeContent } from "@/lib/mdx"
@@ -43,52 +44,11 @@ export function AboutContent({ homeDataEn, homeDataZh }: AboutContentProps) {
               </h1>
               
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                {locale === 'zh' ? (
-                  <>
-                    <p className="text-lg">
-                      我是<span className="text-foreground font-medium">{homeData.name}</span>，
-                      清华大学智能工程与创新设计专业学生，拥有自动化+设计跨学科背景。
-                    </p>
-                    
-                    <p>
-                      我喜欢设计和构建产品。我的方法是将工程实现能力与产品思维相结合——
-                      本质上是一个具有工程实现能力的产品经理。
-                    </p>
-                    
-                    <p>
-                      我的旅程从领导清华创业协会到前往深圳创业。
-                      一路上，我组织了黑客松，构建了 AI 产品，学到了无数关于如何创造有意义的技术的经验。
-                    </p>
-                    
-                    <p className="text-foreground font-medium italic border-l-2 border-accent pl-4">
-                      在 AGI 来临之前为世界创造价值
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <p className="text-lg">
-                      I&apos;m <span className="text-foreground font-medium">{homeData.name}</span>, 
-                      an Intelligent Engineering student at Tsinghua University with an
-                      Automation + Design cross-disciplinary background.
-                    </p>
-                    
-                    <p>
-                      I like to design and build things. My approach combines engineering implementation skills with 
-                      product thinking—I&apos;m essentially a Product PM with engineering implementation skills.
-                    </p>
-                    
-                    <p>
-                      My journey has taken me from leading the Tsinghua Entrepreneurship Association to 
-                      venturing out to Shenzhen for a startup experience. Along the way, I&apos;ve organized 
-                      hackathons, built AI products, and learned countless lessons about what it takes 
-                      to create meaningful technology.
-                    </p>
-                    
-                    <p className="text-foreground font-medium italic border-l-2 border-accent pl-4">
-                      Create value for the world before AGI is achieved
-                    </p>
-                  </>
-                )}
+                {homeData.introduction.map((paragraph, index) => (
+                  <p key={paragraph} className={index === 0 ? "text-lg" : undefined}>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </div>
 
@@ -163,28 +123,15 @@ export function AboutContent({ homeDataEn, homeDataZh }: AboutContentProps) {
       {/* Experience Timeline */}
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="font-serif text-2xl md:text-3xl font-semibold tracking-tight mb-8">
-            {locale === 'zh' ? '经历与旅程' : 'Experience & Journey'}
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold tracking-tight mb-2">
+            {t.sections.experience}
           </h2>
+          <p className="text-muted-foreground mb-8">
+            {t.sections.experienceDesc}
+          </p>
 
-          <div className="max-w-3xl space-y-10">
-            {homeData.experience.map((item, index) => (
-              <div key={index} className="relative pl-8 border-l-2 border-border/80">
-                <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-background border-2 border-accent" />
-                <div className="space-y-2">
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                    <h3 className="font-semibold text-lg text-foreground">{item.role}</h3>
-                    <Badge variant="secondary" className="w-fit text-xs">
-                      {item.period}
-                    </Badge>
-                  </div>
-                  <p className="text-accent font-medium">{item.organization}</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+          <div className="max-w-4xl">
+            <ExperienceSections sections={homeData.experienceSections} />
           </div>
         </div>
       </section>

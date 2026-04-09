@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import { ExperienceSections } from "@/components/experience-sections"
 import { siteConfig } from "@/lib/data"
 import { useLanguage } from "@/components/language-provider"
 import type { ProjectMeta, ArticleMeta, HomeContent as HomeContentType } from "@/lib/mdx"
@@ -61,17 +62,15 @@ export function HomeContent({
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground mb-6 text-balance">
                 {homeData.name}
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-                {homeData.description}
-              </p>
+              <div className="space-y-4 mb-8">
+                {homeData.introduction.map((paragraph) => (
+                  <p key={paragraph} className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
               
               <div className="flex flex-wrap gap-4">
-                <Button asChild className="gap-2">
-                  <Link href="/projects">
-                    {t.hero.viewProjects}
-                    <ArrowRight className="h-4 w-4" />
-                  </Link>
-                </Button>
                 <Button variant="outline" asChild className="gap-2">
                   <a href={siteConfig.github} target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" />
@@ -116,22 +115,8 @@ export function HomeContent({
             </p>
           </div>
 
-          <div className="space-y-8 max-w-3xl">
-            {homeData.experience.slice(0, 4).map((item, index) => (
-              <div key={index} className="relative pl-6 border-l-2 border-border/80">
-                <div className="absolute -left-[5px] top-1 h-2 w-2 rounded-full bg-accent" />
-                <div className="space-y-2">
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                    <h3 className="font-semibold text-foreground">{item.role}</h3>
-                    <span className="text-sm text-muted-foreground">&middot; {item.period}</span>
-                  </div>
-                  <p className="text-accent font-medium text-sm">{item.organization}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+          <div className="max-w-4xl">
+            <ExperienceSections sections={homeData.experienceSections} />
           </div>
 
         </div>
