@@ -43,6 +43,9 @@ export function HomeContent({
   const homeData = locale === 'zh' ? homeDataZh : homeDataEn
   const allProjects = locale === 'zh' ? allProjectsZh : allProjectsEn
   const featuredArticles = locale === 'zh' ? featuredArticlesZh : featuredArticlesEn
+  const featuredProjects = [...allProjects]
+    .sort((a, b) => (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER))
+    .slice(0, 4)
 
   return (
     <>
@@ -131,14 +134,6 @@ export function HomeContent({
             ))}
           </div>
 
-          <div className="mt-8">
-            <Button variant="outline" asChild className="gap-2">
-              <Link href="/about">
-                {t.common.viewFullExperience}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -165,7 +160,7 @@ export function HomeContent({
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {allProjects.map((project) => (
+            {featuredProjects.map((project) => (
               <Card key={project.id} className="group hover:shadow-md transition-shadow border-border/60">
                 <CardHeader>
                   <div className="flex items-start justify-between">

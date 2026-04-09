@@ -62,6 +62,7 @@ Recommended properties:
 - `tech_stack`
 - `timeline`
 - `role`
+- `links`
 - `github_url`
 - `demo_url`
 - `article_url`
@@ -70,6 +71,7 @@ Recommended properties:
 - `sync_to_site`
 
 The record body maps to the project detail-page body on the website.
+The database properties map to the project card/frontmatter fields.
 
 ### Writing database
 
@@ -92,6 +94,7 @@ Recommended properties:
 - `sync_to_site`
 
 The record body maps to the article detail-page body on the website.
+The database properties map to the writing card/frontmatter fields.
 
 ## Sync Rules
 
@@ -101,6 +104,8 @@ The record body maps to the article detail-page body on the website.
 - `Projects.category` must stay `current` or `side`.
 - `published = false` or `sync_to_site = false` means the content should not be synced.
 - `Projects` and `Writing` must always produce both `zh` and `en` files.
+- Full syncs should prune removed or unpublished slugs from the repo.
+- Single-slug syncs should only touch the requested slug.
 
 ## Branch Flow
 
@@ -115,3 +120,13 @@ Recommended flow:
 4. Push to `dev`.
 5. Review the preview deployment.
 6. Promote `dev` to `main`.
+
+## Current implementation notes
+
+- The local skill for this repo is `personal-site-content-updater`.
+- The payload writer lives at:
+  - `$HOME/.codex/skills/personal-site-content-updater/scripts/apply_site_payload.py`
+- The publish helper lives at:
+  - `$HOME/.codex/skills/personal-site-content-updater/scripts/publish_site_changes.sh`
+- The validator lives at:
+  - `$HOME/.codex/skills/personal-site-content-updater/scripts/validate_site_content.py`

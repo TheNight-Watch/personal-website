@@ -1,0 +1,52 @@
+---
+name: MultiAgents Monitor
+tagline: 多 Agent 并发工作的监控与编排视图
+description: 为同时运行多个 Claude Code 或本地 Agent 会话的用户提供统一状态看板、上下文恢复与后续编排能力。
+status: 概念验证
+tags:
+  - AI
+  - Agent
+  - 开发者工具
+  - 工作台
+features:
+  - 统一查看多个 Agent session 状态
+  - 按 workspace 组织并发任务
+  - 帮助用户在中断后快速恢复上下文
+  - 为后续指令分发和编排预留接口
+challenges:
+  - 如何抽象项目级状态而不是堆日志
+  - 跨 workspace 的会话发现与聚合
+  - 实时监控与轻量交互之间的平衡
+  - 从研究工具走向产品化的边界
+techStack:
+  - TypeScript
+  - React
+  - Electron
+  - Terminal Integration
+timeline: 2026
+role: 产品研究与方案设计
+category: side
+order: 6
+id: multi-agents-monitor
+---
+
+MultiAgents Monitor 关注的是一个越来越真实的痛点：当个人开发者同时跑多个长任务 Agent 时，人类自己的记忆和切换成本会迅速成为瓶颈。
+
+## 项目起点
+
+我经常同时打开多个 Claude Code 窗口，让不同 agent 分别处理调研、实现、修复和写作任务。问题是，过了一段时间之后，人很难立刻记起每个窗口之前在做什么、卡在什么地方、下一步该做什么。
+
+## 想做的不是普通看板
+
+我不想只是做一个把 session 名称堆在页面上的监控工具。更重要的是项目级恢复能力：让用户回来时能立刻知道每个 Agent 的目标、阶段、阻塞点和下一步。
+
+## 方向
+
+- 用统一视图展示多 Agent 的工作状态
+- 支持按 workspace 聚合任务
+- 提供更适合长周期任务的上下文恢复机制
+- 为之后的调度和任务下发打基础
+
+## 当前状态
+
+这个项目还在验证阶段，我在对比桌面端、Web 端和 tmux-based 方案，试图找到最适合长期产品化的交互模型。

@@ -1,0 +1,53 @@
+---
+name: IdeaTracker
+tagline: Turn raw ideas into trackable agent workflows
+description: An idea-tracking system for indie builders, designed to connect input, classification, research, execution, and structured output.
+status: In design
+tags:
+  - AI
+  - Idea Management
+  - Research Workflow
+  - Developer Tools
+features:
+  - Classify ideas and route them automatically
+  - Clarify the goal before execution starts
+  - Chain research, prototyping, and output into one loop
+  - Show the state of each idea in a persistent UI
+challenges:
+  - Choosing the right task granularity
+  - Building long-horizon follow-up and reminder behavior
+  - Routing different task types into different workflows
+  - Keeping automation without removing user agency
+techStack:
+  - TypeScript
+  - LLM APIs
+  - Workflow Engine
+  - Notion MCP
+timeline: 2026
+role: Product design and system planning
+category: side
+order: 7
+id: idea-tracker
+---
+
+IdeaTracker starts from a simple frustration: many ideas get captured, but almost none get systematically followed up, validated, or turned into something durable.
+
+## Goal
+
+I want to extend the act of logging an idea into a full workflow. An agent should first understand the problem, then decide whether it belongs in research, prototyping, or content production, and keep the whole chain visible over time.
+
+## Intended flow
+
+1. Input an idea or question
+2. Let the system classify it and choose a path
+3. Clarify the user's goal before action begins
+4. Invoke deeper research workflows when needed
+5. Write the final structured result back into a knowledge base
+
+## Why it matters
+
+For indie builders, scarcity is rarely about ideas. It is about sustaining momentum until an idea becomes testable. IdeaTracker is an attempt to productize that momentum.
+
+## Current challenges
+
+The hard parts are task granularity, long-horizon reminders, and a UI that keeps state visible without becoming another source of noise.

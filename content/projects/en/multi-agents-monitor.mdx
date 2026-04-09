@@ -1,0 +1,52 @@
+---
+name: MultiAgents Monitor
+tagline: A monitoring and orchestration view for parallel agent work
+description: A unified dashboard for people running multiple Claude Code or local agent sessions, with a focus on status visibility, context recovery, and orchestration.
+status: Concept validation
+tags:
+  - AI
+  - Agent
+  - Developer Tools
+  - Workbench
+features:
+  - View multiple agent sessions in one place
+  - Group concurrent work by workspace
+  - Recover context quickly after interruptions
+  - Leave room for future command routing and orchestration
+challenges:
+  - Modeling project-level state instead of raw logs
+  - Discovering and grouping sessions across workspaces
+  - Balancing live monitoring with lightweight interaction
+  - Turning research into a product surface
+techStack:
+  - TypeScript
+  - React
+  - Electron
+  - Terminal Integration
+timeline: 2026
+role: Product research and system design
+category: side
+order: 6
+id: multi-agents-monitor
+---
+
+MultiAgents Monitor is aimed at a pain point that becomes obvious as soon as you start running several long-lived agents in parallel: human memory and switching cost become the bottleneck.
+
+## Starting point
+
+I often keep multiple Claude Code windows open at once, each working on a different stream of implementation, research, or writing. After a while, the hard part is not launching another agent. It is remembering what each one was doing, where it got stuck, and what should happen next.
+
+## More than a dashboard
+
+The goal is not to build a pretty surface that lists sessions. The real value is project-level recovery: helping a person come back and immediately understand each agent's goal, stage, blocker, and next action.
+
+## Direction
+
+- Present parallel agent work in a single view
+- Organize work by workspace instead of isolated sessions
+- Provide stronger context recovery for long-running tasks
+- Prepare the ground for future orchestration and command routing
+
+## Current state
+
+The project is still in validation. I am comparing desktop, web, and tmux-based approaches to find the interaction model that feels most viable over time.

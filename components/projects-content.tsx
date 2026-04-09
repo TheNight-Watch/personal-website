@@ -115,9 +115,14 @@ export function ProjectsContent({
               <Link key={project.id} href={`/projects/${project.slug}`} className="group">
                 <Card className="h-full hover:shadow-md transition-all border-border/60 bg-card/50 group-hover:border-accent/40">
                   <CardHeader>
-                    <CardTitle className="text-lg group-hover:text-accent transition-colors">
-                      {project.name}
-                    </CardTitle>
+                    <div className="flex items-start justify-between gap-3">
+                      <CardTitle className="text-lg group-hover:text-accent transition-colors">
+                        {project.name}
+                      </CardTitle>
+                      <Badge variant="secondary" className="text-xs shrink-0">
+                        {project.status}
+                      </Badge>
+                    </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">
