@@ -1,0 +1,38 @@
+1:"$Sreact.fragment"
+2:I[63780,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/0ms2c.hiz5h80.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"Navbar"]
+3:I[40,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/0ms2c.hiz5h80.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"WritingDetailContent"]
+5:I[76841,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/0ms2c.hiz5h80.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"Footer"]
+6:I[46608,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+4:T651,
+Building AI products is fundamentally different from building traditional software. After spending the past year deeply immersed in this space, here are my key reflections.
+
+## The Promise vs. Reality Gap
+
+When we first encounter a powerful AI model, the possibilities seem endless. But the journey from "this is amazing" to "this solves a real problem" is longer and more complex than it appears.
+
+### Key Insight 1: Start with the Problem, Not the Technology
+
+It's tempting to build something just because AI makes it possible. But the most successful AI products I've seen (and built) start with a genuine user need and then ask: "How can AI help solve this better?"
+
+### Key Insight 2: Embrace Uncertainty
+
+Unlike traditional software where you can predict exactly what will happen, AI systems have inherent variability. Good AI products are designed around this uncertainty rather than fighting it.
+
+## The Human Element
+
+AI doesn't replace humans - it augments them. The best AI products I've worked on:
+
+- Keep humans in the loop for critical decisions
+- Are transparent about when AI is involved
+- Provide ways to override or correct AI suggestions
+
+## What's Next
+
+As AI capabilities continue to grow, the bottleneck increasingly becomes our imagination and execution, not the technology itself. The opportunity for builders who understand both the technology and human needs has never been greater.
+
+---
+
+*These reflections come from my experience building StarBridge, Lumi, and various hackathon projects. Each taught me something new about what it takes to create AI products that actually help people.*
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"articleEn":{"id":"building-ai-products","title":"Reflections on Building AI Products","publication":"Personal Blog","date":"2024-06-20","excerpt":"Insights and lessons learned from the journey of building AI-powered products, from ideation to implementation.","tags":["AI","Product","Startup"],"featured":true,"order":2,"content":"$4","slug":"building-ai-products"},"articleZh":{"id":"building-ai-products","title":"构建 AI 产品的思考：从技术到价值","publication":"个人博客","date":"2024-06-20","excerpt":"分享在多个 AI 项目中积累的产品思考，探讨如何将 AI 技术转化为真正有价值的产品。","tags":["AI","产品","创业","思考"],"external":false,"featured":true,"order":2,"content":"\n在过去一年多的时间里，我参与了多个 AI 相关项目的开发，从组织黑客松到实际创业。这篇文章总结了我在这个过程中的一些思考。\n\n## 技术不等于产品\n\n很多技术人容易陷入的误区是：有了好技术就有了好产品。但现实是，技术只是产品的基础，而非全部。\n\n一个成功的 AI 产品需要：\n- 明确的用户痛点\n- 合适的技术选型\n- 良好的用户体验\n- 可持续的商业模式\n\n## 从用户出发\n\n在 StarBridge 项目中，我们最初的想法是\"用 AI 帮助智力障碍人士\"。但这个描述太宽泛了。\n\n真正的突破来自于：\n1. 深入了解目标用户群体\n2. 发现具体的、未被解决的痛点\n3. 设计针对性的解决方案\n\n## AI 的边界\n\nAI 并非万能。在产品设计中，需要清楚地认识到：\n- AI 能做什么\n- AI 不能做什么\n- 什么时候需要人工介入\n\n## 持续迭代\n\nAI 产品的特殊之处在于，用户反馈可以直接用于改进模型。这创造了一个正向循环，但也需要建立良好的反馈收集机制。\n\n## 最后的话\n\n构建 AI 产品是一个持续学习的过程。我期待在未来的项目中继续探索和成长。\n","slug":"building-ai-products"}}]}],["$","$L5",null,{}]]}],[["$","script","script-0",{"src":"/personal-website/_next/static/chunks/0ms2c.hiz5h80.js","async":true}],["$","script","script-1",{"src":"/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9HranZgvmlT4E7GkgVtST"}
+8:null

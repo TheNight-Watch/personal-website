@@ -1,0 +1,30 @@
+1:"$Sreact.fragment"
+2:I[63780,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/16sr2s7c1z6g4.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"Navbar"]
+3:I[50431,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/16sr2s7c1z6g4.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"ProjectDetailContent"]
+5:I[76841,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/16sr2s7c1z6g4.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"Footer"]
+6:I[46608,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+4:T419,
+ArticleTracker starts from a simple but persistent problem: most articles saved to a read-later list never get opened again.
+
+## Core idea
+
+I want to split the act of saving into two stages. First, capture content with almost no friction. Then let AI evaluate whether the piece is actually worth reading now, based on the user's background, the information density, and the likely payoff.
+
+## Intended workflow
+
+- Save an article from the browser with one click
+- Extract the content and generate an assessment
+- Rank the queue by score and relevance
+- Record notes and summaries after the user actually reads it
+- Sync the final result back into a long-term knowledge base
+
+## Why it matters
+
+For me, the bottleneck is rarely access to information. It is deciding what deserves real attention. ArticleTracker is an attempt to turn that decision into a structured workflow.
+
+## Current focus
+
+The project is currently centered on extraction reliability, user preference learning, and state consistency between the extension and the knowledge base.
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"projectEn":{"name":"ArticleTracker","tagline":"AI-powered article saving, scoring, and reading queue","description":"A reading workflow tool for high-signal content, combining one-click saving, value assessment, queue management, and post-reading sync to Notion.","status":"Iterating","tags":["AI","Knowledge Management","Browser Extension","Reading Workflow"],"features":["Save articles into a reading queue with one click","Score article value based on the reader context","Track Unread / Reading / Archived states","Sync summaries, notes, and source links back to a knowledge base"],"challenges":["Reliable content extraction from modern web pages","Learning user preference from real feedback","Keeping extension state and knowledge-base state aligned","Balancing utility with low-friction UX"],"techStack":["TypeScript","Chrome Extension","LLM APIs","Notion API"],"timeline":2026,"role":"Product design and development","category":"side","order":5,"id":"article-tracker","content":"$4","slug":"article-tracker"},"projectZh":{"name":"ArticleTracker","tagline":"AI 驱动的文章保存、评分与阅读队列","description":"面向高信息密度阅读场景的文章追踪工具，支持一键保存、价值评估、阅读状态管理与读后同步到 Notion。","status":"迭代中","tags":["AI","知识管理","浏览器插件","阅读工作流"],"features":["一键保存文章到阅读队列","基于用户背景生成价值评分","管理 Unread / Reading / Archived 状态","读后摘要、笔记与链接同步到知识库"],"challenges":["动态网页内容抓取稳定性","用户偏好学习与反馈闭环","插件端与知识库端的状态一致性","在提效与过度打扰之间保持平衡"],"techStack":["TypeScript","Chrome Extension","LLM APIs","Notion API"],"timeline":2026,"role":"产品设计与开发","category":"side","order":5,"id":"article-tracker","content":"\nArticleTracker 想解决的是一个很常见但一直没被处理好的问题：文章被收藏之后，往往就永久躺进了 read later 列表，再也没有被真正打开。\n\n## 核心思路\n\n我希望把“收藏文章”拆成两个阶段。第一阶段是低成本保存，先让用户把内容快速收入队列；第二阶段是 AI 评估，根据用户背景、文章信息密度和潜在价值，帮助用户判断这篇内容到底值不值得投入精读时间。\n\n## 目标工作流\n\n- 在网页侧一键保存文章\n- 自动抽取正文并生成 assessment\n- 用分数和标签组织阅读优先级\n- 在用户真正阅读后记录笔记与摘要\n- 把读后结果同步到 Notion 等长期知识库\n\n## 为什么做\n\n我对信息获取这件事有很强的效率焦虑。很多内容不是不值得看，而是不值得现在花 20 分钟去看。ArticleTracker 试图把这个判断过程结构化。\n\n## 当前重点\n\n这个项目目前重点在三件事：网页正文抓取的稳定性、用户偏好学习机制，以及插件端和知识库端之间的状态同步。\n","slug":"article-tracker"}}]}],["$","$L5",null,{}]]}],[["$","script","script-0",{"src":"/personal-website/_next/static/chunks/16sr2s7c1z6g4.js","async":true}],["$","script","script-1",{"src":"/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9HranZgvmlT4E7GkgVtST"}
+8:null

@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[63780,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/16sr2s7c1z6g4.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"Navbar"]
+3:I[50431,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/16sr2s7c1z6g4.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"ProjectDetailContent"]
+5:I[76841,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/16sr2s7c1z6g4.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"Footer"]
+6:I[46608,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+4:T400,
+Lumi is an AI-powered children's drawing education platform that nurtures creativity through intelligent assistance and feedback. The project was born during my entrepreneurship venture in Shenzhen, where I received incubation funding from the Shenzhen Science and Innovation Academy.
+
+## The Approach
+
+The platform uses AI to provide real-time guidance and encouragement as children draw, adapting to their skill level and interests. Rather than replacing the creative process, Lumi aims to enhance it by providing supportive feedback that helps children develop their artistic abilities while maintaining the joy of creation.
+
+## Lessons Learned
+
+Although the startup venture faced challenges, the project taught me valuable lessons about:
+
+- Building products for children
+- Working with AI in educational contexts
+- The importance of iterative user testing with young audiences
+
+## Future Direction
+
+We continue to develop Lumi with a focus on making art education more accessible and engaging for children everywhere.
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"projectEn":{"id":"lumi","name":"Lumi","tagline":"AI + Children's Drawing","description":"An innovative project combining AI with children's art education.","status":"Active Development","tags":["AI","Education","Children","Art","EdTech"],"features":["Real-time AI drawing assistance","Age-appropriate feedback and encouragement","Creative prompts and challenges","Progress gallery and portfolio","Parent/teacher dashboard","Safe content moderation"],"challenges":["Creating AI feedback that encourages rather than constrains creativity","Designing age-appropriate interfaces for young children","Ensuring child safety and privacy","Making learning fun while maintaining educational value"],"techStack":["React Native","Python","TensorFlow","Node.js","MongoDB"],"timeline":"September 2024 - Present","role":"Founder & Product Lead","category":"current","order":2,"links":{"github":"https://github.com/TheNight-Watch"},"content":"$4","slug":"lumi"},"projectZh":{"id":"lumi","name":"Lumi 绘梦","tagline":"AI + 儿童绘画创业项目","description":"将儿童绘画转化为动画故事的 AI 平台，在深圳科创学院孵化。","status":"孵化中","tags":["AI","教育科技","创业","儿童"],"features":["AI 驱动的绘画转动画技术","互动故事生成","儿童友好界面设计","家长分享与社交功能","创意表达培养工具","安全内容审核系统"],"challenges":["保持儿童绘画的原创风格和童真","为不同年龄段设计适合的交互方式","平衡教育价值与娱乐体验","确保生成内容的安全性"],"techStack":["Python","Stable Diffusion","React Native","Firebase","OpenAI API"],"timeline":"2024年9月 - 至今","role":"联合创始人 & 产品负责人","category":"current","order":2,"links":{"github":"https://github.com/TheNight-Watch"},"content":"\nLumi 绘梦是一个创新的 AI 平台，将儿童的绘画作品转化为生动的动画故事。该项目于 2024 年 9 月在深圳启动，获得深圳科创学院孵化资助。\n\n## 项目背景\n\n每个孩子的涂鸦都蕴含着独特的想象力和创造力。Lumi 通过 AI 技术，将这些珍贵的创意表达转化为可以分享的动画故事，让孩子们看到自己的想象力\"活起来\"。\n\n## 核心价值\n\n- **激发创造力**：鼓励儿童通过绘画自由表达\n- **技术赋能**：用 AI 技术降低创作门槛\n- **亲子互动**：为家庭创造共同创作和分享的机会\n- **教育意义**：在娱乐中培养艺术思维和叙事能力\n","slug":"lumi"}}]}],["$","$L5",null,{}]]}],[["$","script","script-0",{"src":"/personal-website/_next/static/chunks/16sr2s7c1z6g4.js","async":true}],["$","script","script-1",{"src":"/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9HranZgvmlT4E7GkgVtST"}
+8:null

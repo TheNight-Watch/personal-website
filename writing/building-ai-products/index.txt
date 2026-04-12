@@ -1,0 +1,55 @@
+1:"$Sreact.fragment"
+2:I[38447,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"LanguageProvider"]
+3:I[90861,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"default"]
+4:I[57834,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"default"]
+5:I[9960,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"Analytics"]
+7:I[46608,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+b:I[46608,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"ViewportBoundary"]
+d:I[46608,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"MetadataBoundary"]
+f:I[50909,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"default",1]
+:HL["/personal-website/_next/static/chunks/09zokw6w5~pi7.css","style"]
+:HL["/personal-website/_next/static/chunks/10p3dvuc.rq5q.css","style"]
+:HL["/personal-website/_next/static/media/47df9ba1c7236d3b-s.p.0cqfp9mgbqxvb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/personal-website/_next/static/media/8c2eb9ceedecfc8e-s.p.0oeo8epbafgia.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"c":["","writing","building-ai-products",""],"q":"","i":false,"f":[[["",{"children":["writing",{"children":[["slug","building-ai-products","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/personal-website/_next/static/chunks/09zokw6w5~pi7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/personal-website/_next/static/chunks/10p3dvuc.rq5q.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/personal-website/_next/static/chunks/178e4wwmaxu12.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/personal-website/_next/static/chunks/03ug_ih8u~oib.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"lora_c51c9905-module__ba83HG__variable source_sans_3_26134156-module__OBZBPa__variable","children":["$","body",null,{"className":"font-sans antialiased","children":[["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L5",null,{}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L6",[["$","script","script-0",{"src":"/personal-website/_next/static/chunks/0ms2c.hiz5h80.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js","async":true,"nonce":"$undefined"}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],{},null,false,null]},null,false,"$@a"]},null,false,"$@a"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$8",null,{"name":"Next.Metadata","children":"$Le"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$f",[["$","link","0",{"rel":"stylesheet","href":"/personal-website/_next/static/chunks/09zokw6w5~pi7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/personal-website/_next/static/chunks/10p3dvuc.rq5q.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"9HranZgvmlT4E7GkgVtST"}
+10:[]
+a:"$W10"
+11:I[63780,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/0ms2c.hiz5h80.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"Navbar"]
+12:I[40,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/0ms2c.hiz5h80.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"WritingDetailContent"]
+14:I[76841,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js","/personal-website/_next/static/chunks/0ms2c.hiz5h80.js","/personal-website/_next/static/chunks/0zm9o7qaw5-_g.js"],"Footer"]
+13:T651,
+Building AI products is fundamentally different from building traditional software. After spending the past year deeply immersed in this space, here are my key reflections.
+
+## The Promise vs. Reality Gap
+
+When we first encounter a powerful AI model, the possibilities seem endless. But the journey from "this is amazing" to "this solves a real problem" is longer and more complex than it appears.
+
+### Key Insight 1: Start with the Problem, Not the Technology
+
+It's tempting to build something just because AI makes it possible. But the most successful AI products I've seen (and built) start with a genuine user need and then ask: "How can AI help solve this better?"
+
+### Key Insight 2: Embrace Uncertainty
+
+Unlike traditional software where you can predict exactly what will happen, AI systems have inherent variability. Good AI products are designed around this uncertainty rather than fighting it.
+
+## The Human Element
+
+AI doesn't replace humans - it augments them. The best AI products I've worked on:
+
+- Keep humans in the loop for critical decisions
+- Are transparent about when AI is involved
+- Provide ways to override or correct AI suggestions
+
+## What's Next
+
+As AI capabilities continue to grow, the bottleneck increasingly becomes our imagination and execution, not the technology itself. The opportunity for builders who understand both the technology and human needs has never been greater.
+
+---
+
+*These reflections come from my experience building StarBridge, Lumi, and various hackathon projects. Each taught me something new about what it takes to create AI products that actually help people.*
+6:["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","$L11",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L12",null,{"articleEn":{"id":"building-ai-products","title":"Reflections on Building AI Products","publication":"Personal Blog","date":"2024-06-20","excerpt":"Insights and lessons learned from the journey of building AI-powered products, from ideation to implementation.","tags":["AI","Product","Startup"],"featured":true,"order":2,"content":"$13","slug":"building-ai-products"},"articleZh":{"id":"building-ai-products","title":"构建 AI 产品的思考：从技术到价值","publication":"个人博客","date":"2024-06-20","excerpt":"分享在多个 AI 项目中积累的产品思考，探讨如何将 AI 技术转化为真正有价值的产品。","tags":["AI","产品","创业","思考"],"external":false,"featured":true,"order":2,"content":"\n在过去一年多的时间里，我参与了多个 AI 相关项目的开发，从组织黑客松到实际创业。这篇文章总结了我在这个过程中的一些思考。\n\n## 技术不等于产品\n\n很多技术人容易陷入的误区是：有了好技术就有了好产品。但现实是，技术只是产品的基础，而非全部。\n\n一个成功的 AI 产品需要：\n- 明确的用户痛点\n- 合适的技术选型\n- 良好的用户体验\n- 可持续的商业模式\n\n## 从用户出发\n\n在 StarBridge 项目中，我们最初的想法是\"用 AI 帮助智力障碍人士\"。但这个描述太宽泛了。\n\n真正的突破来自于：\n1. 深入了解目标用户群体\n2. 发现具体的、未被解决的痛点\n3. 设计针对性的解决方案\n\n## AI 的边界\n\nAI 并非万能。在产品设计中，需要清楚地认识到：\n- AI 能做什么\n- AI 不能做什么\n- 什么时候需要人工介入\n\n## 持续迭代\n\nAI 产品的特殊之处在于，用户反馈可以直接用于改进模型。这创造了一个正向循环，但也需要建立良好的反馈收集机制。\n\n## 最后的话\n\n构建 AI 产品是一个持续学习的过程。我期待在未来的项目中继续探索和成长。\n","slug":"building-ai-products"}}]}],["$","$L14",null,{}]]}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:I[91530,["/personal-website/_next/static/chunks/178e4wwmaxu12.js","/personal-website/_next/static/chunks/03ug_ih8u~oib.js"],"IconMark"]
+9:null
+e:[["$","title","0",{"children":"Reflections on Building AI Products | Haifeng Liu"}],["$","meta","1",{"name":"description","content":"Insights and lessons learned from the journey of building AI-powered products, from ideation to implementation."}],["$","meta","2",{"name":"generator","content":"v0.app"}],["$","link","3",{"rel":"icon","href":"/icon-light-32x32.png","media":"(prefers-color-scheme: light)"}],["$","link","4",{"rel":"icon","href":"/icon-dark-32x32.png","media":"(prefers-color-scheme: dark)"}],["$","link","5",{"rel":"icon","href":"/icon.svg","type":"image/svg+xml"}],["$","link","6",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L15","7",{}]]
