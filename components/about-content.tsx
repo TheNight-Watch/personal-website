@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { useState } from "react"
 import { Github, Mail, MapPin, GraduationCap, Target } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -28,8 +29,19 @@ interface AboutContentProps {
 
 export function AboutContent({ homeDataEn, homeDataZh }: AboutContentProps) {
   const { locale, t } = useLanguage()
+  const [wechatCopied, setWechatCopied] = useState(false)
   
   const homeData = locale === 'zh' ? homeDataZh : homeDataEn
+
+  const handleCopyWechat = async () => {
+    try {
+      await navigator.clipboard.writeText(siteConfig.wechatId)
+      setWechatCopied(true)
+      window.setTimeout(() => setWechatCopied(false), 2000)
+    } catch {
+      setWechatCopied(false)
+    }
+  }
 
   return (
     <>
@@ -101,11 +113,15 @@ export function AboutContent({ homeDataEn, homeDataZh }: AboutContentProps) {
                       GitHub
                     </a>
                   </Button>
-                  <Button variant="outline" asChild size="sm" className="w-full justify-start gap-2">
-                    <a href={`mailto:${siteConfig.email}`}>
+                  <Button variant="outline" size="sm" className="w-full justify-start gap-2" onClick={handleCopyWechat}>
                       <Mail className="h-4 w-4" />
-                      Email
-                    </a>
+                      {wechatCopied
+                        ? locale === 'zh'
+                          ? '微信号已复制'
+                          : 'WeChat ID copied'
+                        : locale === 'zh'
+                          ? `点击获取微信号：${siteConfig.wechatId}`
+                          : `Get WeChat ID: ${siteConfig.wechatId}`}
                   </Button>
                   <Button variant="outline" asChild size="sm" className="w-full justify-start gap-2">
                     <a href={siteConfig.xiaohongshuUrl} target="_blank" rel="noopener noreferrer">

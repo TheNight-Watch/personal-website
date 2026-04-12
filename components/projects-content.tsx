@@ -8,22 +8,17 @@ import { useLanguage } from "@/components/language-provider"
 import type { ProjectMeta } from "@/lib/mdx"
 
 interface ProjectsContentProps {
-  currentProjectsEn: ProjectMeta[]
-  currentProjectsZh: ProjectMeta[]
-  sideProjectsEn: ProjectMeta[]
-  sideProjectsZh: ProjectMeta[]
+  allProjectsEn: ProjectMeta[]
+  allProjectsZh: ProjectMeta[]
 }
 
 export function ProjectsContent({ 
-  currentProjectsEn, 
-  currentProjectsZh,
-  sideProjectsEn,
-  sideProjectsZh
+  allProjectsEn, 
+  allProjectsZh
 }: ProjectsContentProps) {
   const { locale, t } = useLanguage()
   
-  const currentProjects = locale === 'zh' ? currentProjectsZh : currentProjectsEn
-  const sideProjects = locale === 'zh' ? sideProjectsZh : sideProjectsEn
+  const projects = locale === 'zh' ? allProjectsZh : allProjectsEn
 
   return (
     <>
@@ -49,15 +44,15 @@ export function ProjectsContent({
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-8">
             <h2 className="font-serif text-2xl font-semibold tracking-tight mb-2">
-              {t.common.currentFocus}
+              {locale === 'zh' ? '我的项目' : 'My Projects'}
             </h2>
             <p className="text-muted-foreground">
-              {locale === 'zh' ? '我目前投入大部分时间的活跃项目' : 'Active projects I\'m dedicating most of my time to'}
+              {locale === 'zh' ? '我正在做和持续推进的项目' : 'Projects I am building and continuing to push forward'}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {currentProjects.map((project) => (
+            {projects.map((project) => (
               <Link key={project.id} href={`/projects/${project.slug}`} className="group">
                 <Card className="h-full hover:shadow-md transition-all border-border/60 group-hover:border-accent/40">
                   <CardHeader>
@@ -90,51 +85,6 @@ export function ProjectsContent({
                       {t.common.learnMore}
                       <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
                     </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Side Projects */}
-      <section className="py-12 md:py-16 bg-secondary/20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mb-8">
-            <h2 className="font-serif text-2xl font-semibold tracking-tight mb-2">
-              {t.common.sideProjects}
-            </h2>
-            <p className="text-muted-foreground">
-              {t.common.sideProjectsDesc}
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sideProjects.map((project) => (
-              <Link key={project.id} href={`/projects/${project.slug}`} className="group">
-                <Card className="h-full hover:shadow-md transition-all border-border/60 bg-card/50 group-hover:border-accent/40">
-                  <CardHeader>
-                    <div className="flex items-start justify-between gap-3">
-                      <CardTitle className="text-lg group-hover:text-accent transition-colors">
-                        {project.name}
-                      </CardTitle>
-                      <Badge variant="secondary" className="text-xs shrink-0">
-                        {project.status}
-                      </Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <Badge key={tag} variant="outline" className="text-xs">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
                   </CardContent>
                 </Card>
               </Link>

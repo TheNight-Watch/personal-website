@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { useState } from "react"
 import { ArrowRight, Github, Mail, ExternalLink } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -39,14 +40,27 @@ export function HomeContent({
   featuredArticlesZh 
 }: HomeContentProps) {
   const { locale, t } = useLanguage()
+  const [wechatCopied, setWechatCopied] = useState(false)
   
   // Select data based on locale
   const homeData = locale === 'zh' ? homeDataZh : homeDataEn
   const allProjects = locale === 'zh' ? allProjectsZh : allProjectsEn
   const featuredArticles = locale === 'zh' ? featuredArticlesZh : featuredArticlesEn
-  const featuredProjects = [...allProjects]
-    .sort((a, b) => (a.order ?? Number.MAX_SAFE_INTEGER) - (b.order ?? Number.MAX_SAFE_INTEGER))
-    .slice(0, 4)
+  const featuredProjectSlugs = ["starbridge", "ai-host", "lumi", "deskmas"]
+  const projectMap = new Map(allProjects.map((project) => [project.slug, project]))
+  const featuredProjects = featuredProjectSlugs
+    .map((slug) => projectMap.get(slug))
+    .filter((project): project is ProjectMeta => Boolean(project))
+
+  const handleCopyWechat = async () => {
+    try {
+      await navigator.clipboard.writeText(siteConfig.wechatId)
+      setWechatCopied(true)
+      window.setTimeout(() => setWechatCopied(false), 2000)
+    } catch {
+      setWechatCopied(false)
+    }
+  }
 
   return (
     <>
@@ -307,11 +321,15 @@ export function HomeContent({
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild className="gap-2">
-                <a href={`mailto:${siteConfig.email}`}>
-                  <Mail className="h-4 w-4" />
-                  {t.common.emailMe}
-                </a>
+              <Button className="gap-2" onClick={handleCopyWechat}>
+                <Mail className="h-4 w-4" />
+                {wechatCopied
+                  ? locale === 'zh'
+                    ? '微信号已复制'
+                    : 'WeChat ID copied'
+                  : locale === 'zh'
+                    ? `点击获取微信号：${siteConfig.wechatId}`
+                    : `Get WeChat ID: ${siteConfig.wechatId}`}
               </Button>
               <Button variant="outline" asChild className="gap-2">
                 <a href={siteConfig.github} target="_blank" rel="noopener noreferrer">

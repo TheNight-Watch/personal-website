@@ -1,0 +1,48 @@
+---
+id: deskmas
+name: DeskMAS
+tagline: 面向桌面机器人的多智能体协作系统
+description: 一个把多智能体协作从 Overcooked 软件原型延伸到真实 ESP32 桌面机器人平台的研究项目。
+status: 研究原型
+tags:
+  - AI
+  - Multi-Agent
+  - 具身智能
+  - Robotics
+features:
+  - ManagerAgent 与多个执行 Agent 的协作架构
+  - 基于共享状态与回合制的协同机制
+  - 从自然语言输入到桌面机器人执行的闭环
+  - 标准化 ESP32 串口协议与 JSON 指令格式
+  - 基于 ArUco 标记的实时定位
+  - A* 路径规划与 APF 局部避障
+challenges:
+  - 把软件里的多智能体协作逻辑迁移到真实机器人系统
+  - 解耦高层规划与底层硬件执行
+  - 保持定位与导航链路的实时稳定性
+  - 在研究探索与平台通用性之间做平衡
+techStack:
+  - Python
+  - CamelAI
+  - ESP32
+  - OpenCV
+  - ArUco
+  - A*
+  - APF
+timeline: 2025.07 - 2025.09
+role: 多智能体研究
+category: side
+order: 17
+links:
+  github: https://github.com/TheNight-Watch/multiagent_system_overcooked_final
+---
+
+DeskMAS 是一个位于 HCI 与具身智能交叉方向的桌面多智能体协作项目。它最初从一个以 Overcooked 为灵感的软件多智能体原型出发，随后被扩展为一个能够把自然语言任务输入连接到真实机器人执行的桌面机器人平台。
+
+## 我做了什么
+
+我负责多智能体协作架构与系统方案设计，围绕 ManagerAgent 和多个执行 Agent 构建协同机制，通过共享 State 空间与回合制流程，让 LLM 能够完成任务拆解与协同决策。之后项目迁移到 ESP32 机器人平台，我参与设计标准化串口通信协议与 JSON 命令格式，让上层规划逻辑和下层执行控制保持解耦。
+
+## 系统实现
+
+在机器人侧，系统使用顶置 720P 相机和 ArUco 标记完成实时定位，并结合 A* 全局路径规划与 APF 局部避障算法实现导航。这个项目的重点不只是完成单次 demo，而是探索一种更通用的桌面多智能体实验平台，为后续具身协作系统的研究和产品化打基础。

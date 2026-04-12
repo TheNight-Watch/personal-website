@@ -1,0 +1,48 @@
+---
+id: deskmas
+name: DeskMAS
+tagline: Multi-agent collaboration system for desktop robots
+description: A research project that extends multi-agent coordination from an Overcooked software prototype to a real ESP32-based desktop robotics platform.
+status: Research Prototype
+tags:
+  - AI
+  - Multi-Agent
+  - Embodied AI
+  - Robotics
+features:
+  - ManagerAgent and worker-agent collaboration architecture
+  - Shared state and turn-based coordination flow
+  - Natural-language task execution for desktop robots
+  - Standardized ESP32 serial protocol and JSON commands
+  - Real-time localization with ArUco markers
+  - A* planning with APF obstacle avoidance
+challenges:
+  - Turning software multi-agent logic into physical robot collaboration
+  - Decoupling high-level planning from low-level hardware execution
+  - Keeping localization and navigation stable in real time
+  - Balancing research flexibility with platform generality
+techStack:
+  - Python
+  - CamelAI
+  - ESP32
+  - OpenCV
+  - ArUco
+  - A*
+  - APF
+timeline: Jul 2025 - Sep 2025
+role: Multi-agent Research
+category: side
+order: 17
+links:
+  github: https://github.com/TheNight-Watch/multiagent_system_overcooked_final
+---
+
+DeskMAS is a desktop multi-agent collaboration project built at the intersection of HCI and embodied AI. It started from an Overcooked-inspired software prototype and evolved into a platform that connects natural-language task input with real robot execution.
+
+## What I built
+
+I designed the multi-agent architecture around a ManagerAgent plus multiple worker agents, using shared state and turn-based coordination to let an LLM break down tasks and make collaborative decisions. The project then moved onto an ESP32-based robotics platform, where I helped define a standardized serial protocol and JSON command structure so planning and execution could stay decoupled.
+
+## System design
+
+On the robotics side, the system used a top-mounted 720P camera and ArUco markers for real-time localization, together with A* global planning and APF local obstacle avoidance for navigation. The goal was not only to make a single demo work, but to explore how a more general desktop multi-agent platform could be built for embodied collaboration experiments.

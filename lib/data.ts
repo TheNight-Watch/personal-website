@@ -7,6 +7,7 @@ export const siteConfig = {
   xiaohongshuUrl: "https://www.xiaohongshu.com/user/profile/62275105000000001000d07a",
   xiaohongshu: "4705809796",
   email: "liuhaifeng@example.com",
+  wechatId: "lhf20021108",
   
   // Avatar
   avatarUrl: "/images/avatar.jpg",
